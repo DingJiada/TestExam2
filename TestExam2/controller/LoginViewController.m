@@ -91,6 +91,7 @@
     NSLog(@"login...");
     MyTabBarControllerViewController *myTabBar = [[MyTabBarControllerViewController alloc] init];
     
+    myTabBar.modalPresentationStyle = UIModalPresentationOverFullScreen;
     
     [self presentViewController:myTabBar animated:YES completion:nil];
     

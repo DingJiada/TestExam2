@@ -90,9 +90,10 @@
 
 -(void)loginOutClick{
     
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
-    
-    [self presentViewController:loginVC animated:YES completion:nil];
+//    LoginViewController *loginVC = [[LoginViewController alloc] init];
+//
+//    [self presentViewController:loginVC animated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

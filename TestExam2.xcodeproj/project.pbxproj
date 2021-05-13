@@ -161,6 +161,7 @@
 		A318B31A233483D900159A49 /* TestExam2 */ = {
 			isa = PBXGroup;
 			children = (
+				A3580FCB264A7718003613E1 /* afnetworkexample */,
 				A318B34F2334842700159A49 /* model */,
 				A318B34E2334841F00159A49 /* view */,
 				A318B34D2334840E00159A49 /* controller */,
@@ -171,10 +172,6 @@
 				A318B326233483DA00159A49 /* LaunchScreen.storyboard */,
 				A318B329233483DA00159A49 /* Info.plist */,
 				A318B32A233483DA00159A49 /* main.m */,
-				A35BBE85233B1125007F5DDC /* MyAFNetworking.h */,
-				A35BBE86233B1125007F5DDC /* MyAFNetworking.m */,
-				A35BBE88233B3B72007F5DDC /* MyAFNetworking2.h */,
-				A35BBE89233B3B72007F5DDC /* MyAFNetworking2.m */,
 			);
 			path = TestExam2;
 			sourceTree = "<group>";
@@ -244,6 +241,17 @@
 				A35BBE7A2339ADC3007F5DDC /* MsgCell.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		A3580FCB264A7718003613E1 /* afnetworkexample */ = {
+			isa = PBXGroup;
+			children = (
+				A35BBE85233B1125007F5DDC /* MyAFNetworking.h */,
+				A35BBE86233B1125007F5DDC /* MyAFNetworking.m */,
+				A35BBE88233B3B72007F5DDC /* MyAFNetworking2.h */,
+				A35BBE89233B3B72007F5DDC /* MyAFNetworking2.m */,
+			);
+			path = afnetworkexample;
 			sourceTree = "<group>";
 		};
 		B94FA9AA07C77EFB3273D465 /* Pods */ = {
@@ -601,6 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6R4F85AGL;
 				INFOPLIST_FILE = TestExam2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -618,6 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6R4F85AGL;
 				INFOPLIST_FILE = TestExam2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
