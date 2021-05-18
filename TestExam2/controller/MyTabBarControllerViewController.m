@@ -25,7 +25,7 @@
     
 //    [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
 //    [UITabBar appearance].translucent = NO;
-    self.edgesForExtendedLayout=UIRectEdgeBottom;
+    self.edgesForExtendedLayout = UIRectEdgeBottom;
     //UIView*tabbarBgView =[[UIView alloc]initWithFrame:CGRectMake(0,0,self.tabBar.frame.size.width,self.tabBar.frame.size.height)];
     
     //tabbarBgView.backgroundColor=kAppBarColor;

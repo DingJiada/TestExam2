@@ -30,6 +30,7 @@
     phone.placeholder = @"手机号码";
     phone.borderStyle = UITextBorderStyleNone;
     phone.font = [UIFont systemFontOfSize:20];
+    phone.textColor = [UIColor whiteColor];
     phone.autocapitalizationType = UITextAutocapitalizationTypeNone;//不自动首字母大写，默认首字母会大写
     
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(13, 13, 45, 25)];
@@ -40,12 +41,12 @@
     //添加一个透明的view设置左侧缩进
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 128, 20)];
     view.backgroundColor           = [UIColor clearColor];
-    phone.leftView                  = view;
-    phone.leftViewMode              = UITextFieldViewModeAlways;
+    phone.leftView                 = view;
+    phone.leftViewMode             = UITextFieldViewModeAlways;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(62, 16, 80, 20)];
     label.text = @"+853 v";
-    label.textColor = [UIColor whiteColor];
+    label.textColor = [UIColor lightGrayColor];
     [phone addSubview:label];
     
     UITextField *pwd = [[UITextField alloc] initWithFrame:CGRectMake(0, 302, self.view.frame.size.width, 50)];
@@ -54,16 +55,23 @@
     pwd.borderStyle = UITextBorderStyleNone;
     pwd.font = [UIFont systemFontOfSize:20];
     pwd.placeholder = @"密码";
+    pwd.textColor = [UIColor whiteColor];
     UIView *view2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 15, 20)];
-    view.backgroundColor           = [UIColor clearColor];
+    view.backgroundColor          = [UIColor clearColor];
     pwd.leftView                  = view2;
     pwd.leftViewMode              = UITextFieldViewModeAlways;
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 355, self.view.frame.size.width, 30);
+    btn.frame = CGRectMake(0, 355, self.view.frame.size.width-15, 30);
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];//btn字体size
     [btn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
-    [btn setTitle:@"忘记密码？" forState:UIControlStateNormal];
+    [btn setTitle:@"忘记密码?" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    ///添加下划线
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"忘记密码?"];
+    NSRange strRange = {0,[str length]};
+    [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:strRange];
+    [btn setAttributedTitle:str forState:UIControlStateNormal];//这个状态要加上
     
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     loginBtn.frame = CGRectMake(0, 400, self.view.frame.size.width, 50);
